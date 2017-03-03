@@ -2,4 +2,15 @@
 
 .panelWrapper {
   background-color: $panel-bg-color;
+
+
+  &.types {
+    flex-grow: 2;
+  }
+  &.severities {
+    flex-grow: 2;
+  }
+  &.sources {
+    flex-grow: 1;
+  }
 }
