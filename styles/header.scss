@@ -1,0 +1,10 @@
+@import 'variables';
+.header {
+  height: 50px;
+  background-color: $header-bg-color;
+
+  img {
+    height: 30px;
+    margin: 10px;
+  }
+}

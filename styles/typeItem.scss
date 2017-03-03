@@ -1,0 +1,50 @@
+@import 'variables';
+
+.typeItem {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 1px solid $header-bg-color;
+
+  .first, .second {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .icon {
+    background-size: 30px;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+  }
+
+  .attackIndication {
+    background-image: url('../resources/images/target.png');
+  }
+  .phishing {
+    background-image: url('../resources/images/hook.png');
+  }
+  .exploitableData {
+    background-image: url('../resources/images/spy.png');
+  }
+  .dataLeakage {
+    background-image: url('../resources/images/lock.png');
+  }
+  .brandSecurity {
+    background-image: url('../resources/images/shield.png');
+  }
+  .vip {
+    background-image: url('../resources/images/targetPerson.png');
+  }
+
+  .details {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 10px;
+  }
+}
