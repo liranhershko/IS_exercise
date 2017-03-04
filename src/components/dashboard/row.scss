@@ -3,4 +3,20 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   padding: 20px;
+
+  .ice {
+    text-align: center;
+    background-size: 200px;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 220px;
+    background-position: 0 20px;
+  }
+
+  .clearweb {
+    background-image: url('../../../resources/images/icebergClear.png');
+  }
+  .darkweb {
+    background-image: url('../../../resources/images/icebergDark.png');
+  }
 }

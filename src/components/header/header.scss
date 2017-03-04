@@ -2,6 +2,8 @@
 .header {
   height: 70px;
   background-color: $header-bg-color;
+  z-index: 1;
+  position: relative;
 
   img {
     height: 40px;

@@ -15,6 +15,7 @@ class Row extends Component {
   render() {
     return (
       <div className="row">
+        <div className={`ice ${this.props.name.toLowerCase()}`}>{this.props.name.replace(/([A-Z])/g, ' $1').trim().toUpperCase()}</div>
         {Object.keys(this.props.panels).map(this.renderPanel)}
       </div>
     );

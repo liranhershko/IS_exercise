@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-// import { fetchData } from '../actions/index';
+import { fetchData } from '../actions/index';
 
 import Row from '../components/dashboard/row';
 import './dashboard.scss';
@@ -10,6 +10,10 @@ class Dashboard extends Component {
     super(props);
 
     this.renderRow = this.renderRow.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.fetchData();
   }
 
   render() {
@@ -26,12 +30,21 @@ class Dashboard extends Component {
   }
 
   renderRow(rowKey) {
-    return <Row className={rowKey} name={rowKey} panels={this.props.dashboard[rowKey]} key={rowKey} />;
+    return (
+      <Row name={rowKey} panels={this.props.dashboard[rowKey]} key={rowKey} />
+    );
   }
 }
 
+function cleanProps(dashboard) {
+  if (!Object.keys(dashboard).length) return dashboard;
+  delete dashboard._id;
+  delete dashboard.__v;
+}
+
 function mapStateToProps({ dashboard }) {
+  cleanProps(dashboard);
   return { dashboard };
 }
 
-export default connect(mapStateToProps)(Dashboard);
+export default connect(mapStateToProps, { fetchData })(Dashboard);
