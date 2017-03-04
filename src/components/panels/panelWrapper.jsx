@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import PanelHeader from './panelHeader';
-import '../styles/panelWrapper.scss';
+import './panelWrapper.scss';
 
 class PanelWrapper extends React.Component {
   render () {

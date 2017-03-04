@@ -1,16 +1,17 @@
-@import 'variables';
+@import '../../variables';
 
 .panelWrapper {
   background-color: $panel-bg-color;
-
+  font-size: 14px;
+  margin: 0 10px;
 
   &.types {
-    flex-grow: 2;
+    flex: 2 2;
   }
   &.severities {
-    flex-grow: 2;
+    flex: 2 2;
   }
   &.sources {
-    flex-grow: 1;
+    flex: 1 1;
   }
 }

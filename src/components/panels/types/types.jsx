@@ -5,7 +5,7 @@ class Types extends Component {
   render() {
     const { data } = this.props;
     return (
-      <div className="types">
+      <div className="typesContent">
         <TypeItem
           first={{ itemId: "attackIndication", text: 'Attack Indication', value: data['AttackIndication'] }}
           second={{ itemId: "dataLeakage", text: 'Data Leakage', value: data['DataLeakage'] }}

@@ -1,0 +1,21 @@
+.severitiesContent {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+
+  .chart {
+    align-self: center;
+    margin-top: 10px;
+
+    .pie-chart-slice {
+      stroke-width: 0;
+    }
+  }
+
+  .detailsContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}

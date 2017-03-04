@@ -1,0 +1,23 @@
+.sourcesContent {
+  padding: 10px;
+
+  .source {
+    margin: 5px 0;
+  }
+
+  .detailsContainer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .progressBar {
+    width: 85%;
+    height: 6px;
+  }
+
+  .value {
+    align-self: flex-end;
+  }
+}

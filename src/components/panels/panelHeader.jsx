@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/panelHeader.scss';
+import './panelHeader.scss';
 
 export default props => {
   return (

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 // import { fetchData } from '../actions/index';
 
-import Row from './row';
-import '../styles/dashboard.scss';
+import Row from '../components/dashboard/row';
+import './dashboard.scss';
 
 class Dashboard extends Component {
   constructor(props) {

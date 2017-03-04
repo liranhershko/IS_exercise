@@ -1,4 +1,4 @@
-@import 'variables';
+@import '../../../variables';
 
 .typeItem {
   display: flex;
@@ -24,22 +24,22 @@
   }
 
   .attackIndication {
-    background-image: url('../resources/images/target.png');
+    background-image: url('../../../../resources/images/target.png');
   }
   .phishing {
-    background-image: url('../resources/images/hook.png');
+    background-image: url('../../../../resources/images/hook.png');
   }
   .exploitableData {
-    background-image: url('../resources/images/spy.png');
+    background-image: url('../../../../resources/images/spy.png');
   }
   .dataLeakage {
-    background-image: url('../resources/images/lock.png');
+    background-image: url('../../../../resources/images/lock.png');
   }
   .brandSecurity {
-    background-image: url('../resources/images/shield.png');
+    background-image: url('../../../../resources/images/shield.png');
   }
   .vip {
-    background-image: url('../resources/images/targetPerson.png');
+    background-image: url('../../../../resources/images/targetPerson.png');
   }
 
   .details {

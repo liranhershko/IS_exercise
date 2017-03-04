@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import PanelWrapper from './panelWrapper';
-import Severities from './severities';
-import Sources from './sources';
-import Types from './types';
-import '../styles/row.scss';
+import PanelWrapper from '../panels/panelWrapper';
+import Severities from '../panels/severities/severities';
+import Sources from '../panels/sources/sources';
+import Types from '../panels/types/types';
+import './row.scss';
 
 class Row extends Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../resources/images/logo.png';
-import '../styles/header.scss';
+import logo from '../../../resources/images/logo.png';
+import './header.scss';
 
 export default () => {
   return (

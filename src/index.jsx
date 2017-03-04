@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 
 import reducers from './reducers';
-import App from './app.jsx';
+import App from './components/app.jsx';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 const store = createStoreWithMiddleware(reducers);
@@ -20,8 +20,8 @@ render(
 );
 
 if (module && module.hot) {
-  module.hot.accept('./app.jsx', () => {
-    const App = require('./app.jsx').default;
+  module.hot.accept('./components/app.jsx', () => {
+    const App = require('./components/app.jsx').default;
     render(
       <AppContainer>
         <Provider store={store}>
