@@ -38,3 +38,8 @@ npm run build
 ```
 This will create a public folder that the server will point to for serving static files.
 You will then be able to open the web browser to `http://localhost:3090/` and run the production build version of the code.
+
+### NOTES
+* When the app loades in the browser, it makes a GET request to the server for the data. If no data is present, the service will insert a new document to the mongo db with a sample data and serve it back to the client.
+* The data stored in DB has the same structure of the JSON file I received. This is just to keep it consistant with the exercise.
+* If you have any questions or issues, please contact me.
