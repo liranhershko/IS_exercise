@@ -36,5 +36,5 @@ Open the web browser to `http://localhost:8888/` (Be aware that this will create
 ```
 npm run build
 ```
-This will create a public folder that the server wilol point to for serving static files.
+This will create a public folder that the server will point to for serving static files.
 You will then be able to open the web browser to `http://localhost:3090/` and run the compressed build version of the code.
