@@ -16,6 +16,7 @@ app.use(morgan('combined'));
 app.use(cors());
 app.use(bodyParser.json({ type: '*/*' }));
 
+app.use(express.static('../public'));
 // Routes setting
 const routesV1 = require('./routes/routesV1');
 app.use('/v1', routesV1);
