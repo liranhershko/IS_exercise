@@ -24,6 +24,7 @@ This will run the client in dev environment so you can edit the code and see you
 
 ```
 cd server/
+npm install
 npm run dev
 ```
 
